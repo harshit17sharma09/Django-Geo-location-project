@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>Geo API</h2>
+    <p>Your ip address is
+        <strong>{{ ip }}</strong>, and you are probably in
+        <strong>
+            {{ city }}, {{ country }},
+        </strong>
+        longitude ->{{ longitude }}, latitude->{{ latitude }}
+    </p>
+    {% comment %}
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?center={{ latitude }},{{ longitude }}&zoom=8&key={{ api_key }}"
+        allowfullscreen>
+    </iframe> {% endcomment %}
+</body>
+
+
+</html>
